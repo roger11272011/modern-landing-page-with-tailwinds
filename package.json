@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+    "build:tailwinds": "tailwind build src/style.css -o public/style.css",
+    "build": "postcss src/style.css -o public/style.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "homepage": "https://github.com/johnkomarnicki/modern-landing-page-with-tailwinds#readme",
   "devDependencies": {
     "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
   }
 }
